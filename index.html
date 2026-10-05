@@ -532,20 +532,20 @@
     }
 
     function loadWrongQuestions() {
-      const saved = localStorage.getItem('history_quiz_wrong_157');
+      const saved = localStorage.getItem('geology_quiz_wrong_58');
       if (saved) wrongQuestionsMap = JSON.parse(saved);
     }
 
     function saveWrongQuestions() {
-      localStorage.setItem('history_quiz_wrong_157', JSON.stringify(wrongQuestionsMap));
+      localStorage.setItem('geology_quiz_wrong_58', JSON.stringify(wrongQuestionsMap));
     }
 
     function getProgress(chId) {
-      return localStorage.getItem(`history_quiz_prog_157_${chId}`) || 0;
+      return localStorage.getItem(`geology_quiz_prog_58_${chId}`) || 0;
     }
 
     function saveProgress(chId, percent) {
-      localStorage.setItem(`history_quiz_prog_157_${chId}`, percent);
+      localStorage.setItem(`geology_quiz_prog_58_${chId}`, percent);
     }
 
     function renderChapterList() {
