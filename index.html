@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>地学 一問一答クイズ</title>
+  <title>地学 一問一答（58問完全版）</title>
   <style>
     * {
       box-sizing: border-box;
@@ -315,7 +315,7 @@
 
 <div id="app">
   <header>
-    <button id="btn-home" class="header-btn" onclick="showChapterView()">🏠 ホーム</button>
+    <button id="btn-home" class="header-btn" onclick="showChapterView()">ホーム</button>
     <h1 id="header-title">地学 一問一答</h1>
     <button id="btn-mode-toggle" class="header-btn" onclick="toggleMode()">モード: 4択</button>
   </header>
@@ -358,7 +358,7 @@
   const quizData = [
     {
       id: "ch1",
-      title: "プリント①：大気の構造",
+      title: "1章 大気の構造",
       theme: "theme-1",
       questions: [
         { q: "乾燥空気の組成で、窒素(78%)に次いで2番目に体積比が大きい気体(21%)は何か？", ans: "酸素", dummy: ["二酸化炭素", "アルゴン", "水蒸気"] },
@@ -380,7 +380,7 @@
     },
     {
       id: "ch2",
-      title: "プリント②：大気中の水蒸気と雲",
+      title: "2章 大気中の水蒸気と雲",
       theme: "theme-2",
       questions: [
         { q: "水蒸気が凝結して水滴になるとき、または水が蒸発するときに出入りする状態変化の熱を何と呼ぶか？", ans: "潜熱", dummy: ["顕熱", "放射熱", "断熱熱"] },
@@ -400,7 +400,7 @@
     },
     {
       id: "ch3",
-      title: "プリント③：太陽放射と大気のエネルギー収支",
+      title: "3章 太陽放射と大気のエネルギー収支",
       theme: "theme-3",
       questions: [
         { q: "大気圏外で太陽光線に垂直な1m²の面が1秒間に受ける太陽放射エネルギー量（約1.36kW/m²）を何と呼ぶか？", ans: "太陽定数", dummy: ["アルベド", "放射収支", "地球放射"] },
@@ -417,7 +417,7 @@
     },
     {
       id: "ch4",
-      title: "プリント④：風と大気の大循環",
+      title: "4章 風と大気の大循環",
       theme: "theme-4",
       questions: [
         { q: "気圧の高い方から低い方へ向かって働く、単位質量あたりの力を何と呼ぶか？", ans: "気圧傾度力", dummy: ["コリオリの力", "摩擦力", "遠心力"] },
@@ -434,7 +434,7 @@
     },
     {
       id: "ch5",
-      title: "プリント⑤：海水の運動と海洋大循環",
+      title: "5章 海水の運動と海洋大循環",
       theme: "theme-5",
       questions: [
         { q: "海水中にとけている塩分の中で最も高い割合（約78%）を占める物質は何か？", ans: "塩化ナトリウム", dummy: ["塩化マグネシウム", "硫酸マグネシウム", "硫酸カルシウム"] },
@@ -530,7 +530,7 @@
           <span class="progress-text">${prog}%</span>
         </div>
         <div class="btn-group">
-          <button class="btn-start" onclick="startQuiz(${idx}, false)">演習開始</button>
+          <button class="btn-start" onclick="startQuiz(${idx}, false)">回答する</button>
           <button class="btn-review" onclick="startQuiz(${idx}, true)" ${wrongList.length === 0 ? 'disabled' : ''}>
             復習 (${wrongList.length})
           </button>
