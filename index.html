@@ -530,7 +530,7 @@
           <span class="progress-text">${prog}%</span>
         </div>
         <div class="btn-group">
-          <button class="btn-start" onclick="startQuiz(${idx}, false)">回答する</button>
+          <button class="btn-start" onclick="startQuiz(${idx}, false)">通常スタート</button>
           <button class="btn-review" onclick="startQuiz(${idx}, true)" ${wrongList.length === 0 ? 'disabled' : ''}>
             復習 (${wrongList.length})
           </button>
